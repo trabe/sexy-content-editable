@@ -6,8 +6,8 @@ module SexyContentEditable
     def sexy_content_editable_tag(name, value = nil, options = {})
       data_options = options[:data] || {}
       data_options.merge! behaviour: 'sexy-content-editable'
-      text_area_options = options.merge data: data_options
-      text_area name, value, text_area_options
+      text_field_options = options.merge data: data_options
+      text_field name, value, text_field_options
     end
   end
 end

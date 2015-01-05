@@ -1,0 +1,72 @@
+/*
+  *= require sexy-content-editable
+  */
+
+@import 'bootstrap/variables';
+
+$text-color: #333;
+$input-border: #ccc;
+$input-border-focus: #66afe9;
+$state-danger-text: #333;
+$state-danger-border: #ccc;
+
+
+.sexy-content-editable {
+  margin-bottom: 25px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.sexy-content-editable-toolbar {
+  margin-bottom: 0px;
+
+  .btn-group {
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+  }
+
+  i {
+    font-size: 90%;
+  }
+
+  .btn {
+    padding: 4px 10px;
+
+    &[data-role^=b-] {
+      font-family: serif;
+    }
+  }
+
+  .icon-font {
+    color: lighten($text-color, 20%);
+  }
+}
+
+.sexy-content-editable-content {
+  margin: 6px 6px;
+  min-height: 100px;
+  padding: 4px;
+  border: 1px solid $input-border;
+  background: #fff;
+  color: #555;
+  overflow-y: auto;
+
+  border-radius: 4px 6px;
+  &:focus {
+    border-color: $input-border-focus;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px adjust-color($input-border-focus, $alpha: 0.6);
+  }
+}
+
+
+.field_with_errors .sexy-content-editable-content {
+  color: $state-danger-text;
+  border-color: $state-danger-border;
+  &:focus {
+    border-color: rgb(233, 50, 45);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(248, 185, 183);
+  }
+}
+

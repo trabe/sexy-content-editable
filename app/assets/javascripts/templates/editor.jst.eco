@@ -1,0 +1,52 @@
+<div class="sexy-content-editable">
+  <div class="sexy-content-editable-toolbar">
+    <div class="btn-group">
+      <a href="#" class="btn btn-default" tabindex="-1" data-name='undo' data-role='undo' disabled><i class='fa fa-undo'></i></a>
+      <a href="#" class="btn btn-default" tabindex="-1" data-name='redo' data-role='redo' disabled><i class='fa fa-repeat'></i></a>
+    </div>
+    <div class="btn-group">
+      <a href="#" class="btn btn-default" tabindex="-1" data-name='clean' data-role='removeFormat' disabled><i class='fa fa-eraser'></i></a>
+      <a href="#" class="btn btn-default" tabindex="-1" data-name='b'     data-role='bold' disabled><i class='fa fa-bold'></i></a>
+      <a href="#" class="btn btn-default" tabindex="-1" data-name='i'     data-role='italic' disabled><i class='fa fa-italic'></i></a>
+      <a href="#" class="btn btn-default" tabindex="-1" data-name='sub'   data-role='subscript' disabled><i class='fa fa-subscript'></i></a>
+      <a href="#" class="btn btn-default" tabindex="-1" data-name='sup'   data-role='superscript' disabled><i class='fa fa-superscript'></i></a>
+    </div>
+    <div class="btn-group">
+      <a href="#" class="btn btn-default" tabindex="-1" data-name='ul'   data-role='insertUnorderedList' disabled><i class='fa fa-list-ul'></i></a>
+      <a href="#" class="btn btn-default" tabindex="-1" data-name='ol'   data-role='insertOrderedList' disabled><i class='fa fa-list-ol'></i></a>
+      <a href="#" class="btn btn-default" tabindex="-1" data-name='rtab' data-role='indent' disabled><i class='fa fa-indent'></i></a>
+      <a href="#" class="btn btn-default" tabindex="-1" data-name='ltab' data-role='outdent' disabled><i class='fa fa-outdent'></i></a>
+    </div>
+    <div class="btn-group">
+      <a href="#" class="btn btn-default" tabindex="-1" data-name='prompt-link' disabled><i class='fa fa-link'></i></a>
+      <a href="#" class="btn btn-default" tabindex="-1" data-name='prompt-html' disabled><i class='fa fa-html5'></i></a>
+    </div>
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1" disabled>
+        Texto <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="#" tabindex="-1" data-name='h1' data-role='b-h1'>Cabecera 1</a>
+        </li>
+        <li>
+          <a href="#" tabindex="-1" data-name='h2' data-role='b-h2'>Cabecera 2</a>
+        </li>
+        <li>
+          <a href="#" tabindex="-1" data-name='h3' data-role='b-h3'>Cabecera 3</a>
+        </li>
+        <li>
+          <a href="#" tabindex="-1" data-name='h4' data-role='b-h4'>Cabecera 4</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href="#" tabindex="-1" data-name='p'  data-role='b-p'>Párrafo</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="sexy-content-editable-content <%= @size %>" data-prevent-global-keybinding="true" contenteditable>
+  </div>
+</div>
