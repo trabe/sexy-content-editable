@@ -1,6 +1,6 @@
 # Sexy::Content::Editable
 
-TODO: Write a gem description
+Work in progress. Not production ready yet (^\_^ U)
 
 ## Installation
 
