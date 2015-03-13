@@ -72,7 +72,6 @@ class LinkPrompt extends BasePrompt
     super('templates/link_prompt_modal')
 
   _processUserInput : (userInput) =>
-    debugger
     url = userInput.filter (e) ->
       e.value if e.name is "url"
 
@@ -123,6 +122,7 @@ class SexyContentEditable
 
   _extractConfiguration: ->
     @value         = @$formElement.attr('value')
+    # TODO: Not in use. Fix this ¬_¬U
     @buttonsConfig = @$formElement.data('toolbar-config') || 'default'
     @buttons       = @$formElement.data('toolbar-buttons') || ALL_BUTTONS
     @size          = @$formElement.data('size') || ''
